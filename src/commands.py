@@ -46,14 +46,14 @@ def weather_today(chat, match):
 		html += "<i>Скорость ветра - </i>{} м/с\n".format(processed_resp.get("wind"))
 		html += "<i>Влажность - </i>{} %".format(processed_resp.get("humidity"))
 
-		icon_url = processed_resp.get("icon")
-		f = open('image.png', 'w')
-		f.write(unicode(requests.get(icon_url).content, "ISO-8859-1"))
-		f.close()
+		# icon_url = processed_resp.get("icon")
+		# f = open('image.png', 'w')
+		# f.write(unicode(requests.get(icon_url).content, "ISO-8859-1"))
+		# f.close()
 
-		with open('image.png', mode="r") as f:
-			chat.send_image(f, caption='icon from weathermap')
-		# return chat.reply(html, parse_mode="HTML")
+		# with open('image.png', mode="r") as f:
+		# 	chat.send_image(f, caption='icon from weathermap')
+		return chat.reply(html, parse_mode="HTML")
 		# return chat.send_image(processed_resp.get("icon"), caption='some caption')
 	else:
 		return chat.send_text('Отправьте свое местоположение')
