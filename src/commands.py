@@ -58,6 +58,7 @@ def weather_today(chat, match):
 	else:
 		return chat.send_text('Отправьте свое местоположение')
 
+
 @bot.command(r'На 3 дня')
 def forecast(chat, match):
 	if match.group(0) != None and chat.has_location():
