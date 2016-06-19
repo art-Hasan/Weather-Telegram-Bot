@@ -1,0 +1,2 @@
+weathermap: aa43bb5d86018c18a7b62fa61654dbe5
+telegram: 187699580:AAE4bdqIwCZfnzfubp67ndCxEGdtLQbeQOc

@@ -1,0 +1,6 @@
+*.pot
+*.py[co]
+*~
+
+venv
+__pycache__
