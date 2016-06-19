@@ -2,6 +2,7 @@
 *.py[co]
 *~
 *.png
+access_token.txt
 
 venv
 __pycache__
