@@ -1,6 +1,7 @@
 *.pot
 *.py[co]
 *~
+*.png
 
 venv
 __pycache__
