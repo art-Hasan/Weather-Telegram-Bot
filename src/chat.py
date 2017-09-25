@@ -60,3 +60,5 @@ class Chat:
 
 	def __str__(self):
 		return "location -- [{}]".format(self._location)
+
+	
