@@ -47,7 +47,7 @@ class WeatherMap:
 		wind = response.get("wind")["speed"]
 		humidity = response.get("main")["humidity"]
 		icon_id = weather[0].get("icon")
-		url = "http://openweathermap.org/img/w/{0}.png".format(icon_id)
+		#url = "http://openweathermap.org/img/w/{0}.png".format(icon_id)
 		# icon = requests.get(url)
 
 		response = {
